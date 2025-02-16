@@ -3,16 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Cissors</title>
+    <link rel="icon" type="image/x-icon" href="images/scissors.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>this is heading</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut consectetur accusantium aperiam. Minus veniam quam totam ullam sequi inventore distinctio dolorum explicabo! Numquam veritatis voluptatum placeat nesciunt dicta, necessitatibus porro.
-    Deserunt nesciunt, nisi eligendi, impedit mollitia quidem labore molestiae dolorum, eveniet expedita consequatur tenetur incidunt reiciendis! Tempora fugit totam praesentium soluta excepturi sed, culpa quam quibusdam quas itaque? Corrupti, dignissimos.</p>
-    
-    <button>click me!</button>
-    
-    <script src="script.js"></script>
+    <header>
+        <h1>Rock Paper Cissors</h1>
+    </header>
+        
+        <main>
+            <div class="msgConatiner">
+                <p id="msg">Play Your Move</p>
+            </div>
+
+            <div class="scoreBoard">
+                <div class="score">
+                    <p id="userScore">0</p>
+                    <p>YOU</p>
+                </div>
+                <div class="score">
+                    <p id="compScore">0</p>
+                    <p>COMP</p>
+                </div>
+            </div>
+
+            <div class="choices">
+                <button class="choice1" id="rock">
+                    ✊🏻
+                </button>
+                <button class="choice2" id="paper">
+                    ✋🏻
+                </button>
+                <button class="choice3" id="scissor">
+                    ✌🏻
+                </button>
+            </div>
+        </main>    
+
+    <script src="app.js"></script>
 </body>
 </html>
