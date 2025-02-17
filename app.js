@@ -43,7 +43,7 @@ const playAgain=()=>{
         
     }
     if(compscore===10){
-        PopupText.innerText="Unfortunetely!\nComputer Won";
+        PopupText.innerText="unfortunately!\nComputer Won";
         playButton.style.backgroundColor="#B82132";
         
     }
