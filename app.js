@@ -30,7 +30,9 @@ const drawGame=()=>{
 
 const playAgain=()=>{
     popup.style.display = ""; 
+    
     userScoreText.innerText=0;
+    
     compScoreText.innerText=0;
     msg.innerText=`Play Your Move`;
     msg.style.backgroundColor="";
@@ -38,10 +40,12 @@ const playAgain=()=>{
     if(userScore===10){
         PopupText.innerText="congratulations!\nYou Won";
         playButton.style.backgroundColor="#5B913B";
+        
     }
-    else{
+    if(compscore===10){
         PopupText.innerText="Unfortunetely!\nComputer Won";
         playButton.style.backgroundColor="#B82132";
+        
     }
 }
 
@@ -53,6 +57,8 @@ const showWinner=(userWin,userChoice,compChoice)=>{
         msg.style.backgroundColor="#5B913B";
         if(userScore===10){
             playAgain();
+            userScore=0;
+            compscore=0;
         }
     }else{
         compscore++;
@@ -61,6 +67,8 @@ const showWinner=(userWin,userChoice,compChoice)=>{
         msg.style.backgroundColor="#B82132";
         if(compscore===10){
             playAgain();
+            compscore=0;
+            userScore=0;
         }
     }
 };
